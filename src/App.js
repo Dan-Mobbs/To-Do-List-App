@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Mainheader from './components/main/Mainheader'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <>
+      
+    <div className="sidebar-heading">
+        Interface
     </div>
+
+    <li className="nav-item">
+        <a className="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo"
+            aria-expanded="true" aria-controls="collapseTwo">
+            <i className="fas fa-fw fa-cog"></i>
+            <span>Components</span>
+        </a>
+        <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div className="bg-white py-2 collapse-inner rounded">
+                <h6 className="collapse-header">Custom Components:</h6>
+                <a className="collapse-item" href="buttons.html">Buttons</a>
+                <a className="collapse-item" href="cards.html">Cards</a>
+            </div>
+        </div>
+    </li>
+  </>  
   );
 }
 
