@@ -1,7 +1,6 @@
 import React from 'react'
 import Mainheader from './components/main/Mainheader'
 
-
 const App = () => {
   return (
    <>
